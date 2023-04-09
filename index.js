@@ -1,9 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const wordArray = word.split('');
+  for (i=0; i < wordArray.length; i++){
+    if (wordArray[i] === wordArray[(wordArray.length - i - 1)]){
+      
+    } else {
+      return false;
+    }
+    return true;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  create array from string
+  iterate from beginning of word
+  iterate from end of word
+  compare as you iterate through letters
 */
 
 /*
